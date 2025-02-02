@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="animate_animated animate_fadeInDown">My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link animate_animated animate_fadeIn">About</a></li>
+                <li><a href="#education" class="nav-link animate_animated animate_fadeIn">Education</a></li>
+                <li><a href="#projects" class="nav-link animate_animated animate_fadeIn">Projects</a></li>
+                <li><a href="#skills" class="nav-link animate_animated animate_fadeIn">Skills</a></li>
+                <li><a href="#contact" class="nav-link animate_animated animate_fadeIn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content animate_animated animate_fadeInLeft">
+                <h2>Hello, I'm <span class="highlight">Manish Kumar Rai</span>!</h2>
+                <p>I'm a <span class="highlight">Graphic Designer</span> with a passion for <span class="highlight">Virtual Reality (VR) UI/UX Design</span>.</p>
+                <a href="#about" class="btn animate_animated animatepulse animate_infinite">Learn More</a>
+            </div>
+            <div class="hero-image animate_animated animate_fadeInRight">
+                <img src="C:\Users\WINSOME\Downloads\professional profile image in formal dress.png" alt="Your Image">
+            </div>
+        </div>
+  </section>
+
+    <section id="about">
+        <h2 class="animate_animated animate_fadeIn">About Me</h2>
+        <div class="container">
+            <div class="about-content animate_animated animate_fadeInUp">
+                <p>Currently, I am pursuing my <span class="highlight">BCA 1st Year</span> and exploring the world of design and development. I love creating immersive experiences through VR and UI/UX design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="animate_animated animate_fadeIn">Education</h2>
+        <div class="container">
+            <div class="education-content">
+                <div class="education-item animate_animated animate_fadeInLeft">
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <p>Currently in 1st Year</p>
+                    <p>Expected Graduation: 2027</p>
+                </div>
+                <div class="education-item animate_animated animate_fadeInRight">
+                    <h3>High School</h3>
+                    <p>Completed in 2023</p>
+                    <p>School: [NEHRU HIGH SECONDARY SCHOOL AALO]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="animate_animated animate_fadeIn">Projects</h2>
+        <div class="container">
+            <div class="project animate_animated animate_fadeInUp">
+                <img src="C:\Users\WINSOME\Downloads\FIOWCHARTproj 2025-02-03 at 01.01.01.png" alt="Project 1">
+                <h3>PROJECT BMI</h3>
+ <p>Body Mass Index (BMI) is a simple numerical measure that uses a person's weight and height to gauge whether they have a healthy body weight. Here's a quick overview:</p>
+                <p>Formula: BMI = {weight (kg)}/{height (M)}</p>
+                <p>Categories: Underweight, Normal weight, Overweight, Obesity.</p>
+                <a href="https://docs.google.com/presentation/d/1t70biawoxucrhv4xg5_iIkCD_0izTKo8/edit?usp=drivesdk&ouid=115278126784983922816&rtpof=true&sd=true" target="_blank" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="animate_animated animate_fadeIn">Skills</h2>
+        <div class="container">
+            <ul>
+                <li class="animate_animated animate_fadeIn">HTML</li>
+                <li class="animate_animated animate_fadeIn">CSS</li>
+                <li class="animate_animated animate_fadeIn">JavaScript</li>
+                <li class="animate_animated animate_fadeIn">React</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="animate_animated animate_fadeIn">Contact</h2>
+        <div class="container">
+            <form class="animate_animated animate_fadeInUp">
+                <input type="text" placeholder="Name" required> <br>
+                <input type="email" placeholder="Email" required><br>
+                <textarea placeholder="Message"></textarea><br>
+                <button type="submit" class="btn">Send</button><br>
+            </form>
+        </div>
+    </section>
+<footer class="animate_animated animate_fadeInUp">
+        &copy; Manish Kumar Rai 2025
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* General Styles */
+/* General Styles */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.highlight {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    background-color: #ff4d4d;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1a1a1a;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('your-hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    text-align: center;
+}
+.hero-content h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e60000;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #ff4d4d;
+}
+
+/* About Section */
+#about {
+    padding: 50px;
+    background-color: #262626;
+}
+#about h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Education Section */
+#education {
+    padding: 50px;
+    background-color: #1a1a1a;
+}
+
+#education h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.education-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+    transform: scale(1.05);
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px;
+    background-color: #262626;
+}
+
+#projects h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    border: 3px solid #ff4d4d;
+    border-radius: 5px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+ margin: 10px 0;
+}
+
+.project p {
+    font-size: 1em;
+}
+
+/* Skills Section */
+#skills {
+    padding: 50px;
+    background-color: #1a1a1a;
+}
+
+#skills h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.2em;
+    background-color: #ff4d4d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+#skills ul li:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background-color: #262626;
+}
+
+#contact h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+form button:hover {
+    background-color: #e60000;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
